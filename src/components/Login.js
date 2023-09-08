@@ -64,7 +64,7 @@ const Login = () => {
             </div>
             <form className='p-12 bg-black absolute w-full md:w-3/12 top-60 left-[50%] translate-x-[-50%] bg-opacity-80 text-white' onSubmit={(e) => e.preventDefault()}>
                 <h1 className='font-bold text-3xl my-4 text-white '>{isSignInForm ? "Sign In" : "Sign up"}</h1>
-                <input type='email' placeholder='Email Address' className='p-4 my-4 w-full  rounded-md border-0 outline-0 bg-gray-700' ref={email}></input>
+                <input type='email' placeholder='Email Address' className='p-4 my-4 w-full rounded-md border-0 outline-0 bg-gray-700' ref={email}></input>
                 {!isSignInForm && <input type='text' placeholder='Name' className='p-4 my-4 w-full rounded-md outline-0 border-0 bg-gray-700' ref={name}></input>}
                 <input type='password' placeholder='Password' className='p-4 my-4 w-full  rounded-md outline-0 border-0 bg-gray-700' ref={password}></input>
                 <p className='text-orange-500 font-bold text-sm'>{errorMessage}</p>

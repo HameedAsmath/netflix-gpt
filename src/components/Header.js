@@ -36,7 +36,7 @@ const Header = () => {
     return () => unsubscribe();
   }, []);
 
-  const handleGPTSearchClick = () => {
+  const handleGPT_SearchClick = () => {
     dispatch(toogleGPTSearchView());
   };
 
@@ -62,7 +62,7 @@ const Header = () => {
           )}
           <button
             className="py-2 px-4 bg-purple-400 my-2 mx-4 text-white rounded-lg"
-            onClick={handleGPTSearchClick}
+            onClick={handleGPT_SearchClick}
           >
             {showGPTSearch ? "Home Page" : "GPT search"}
           </button>
